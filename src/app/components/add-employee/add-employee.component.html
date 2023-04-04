@@ -1,0 +1,70 @@
+<div class="container">
+  <div class="card mb-3">
+    <div class="row g-0">
+      <div class="col-md-12">
+        <div class="card-body">
+          <h5 class="card-title">{{ title }}</h5>
+          <p class="card-text">{{ subTitle }}</p>
+          <form [formGroup]="addForm" (ngSubmit)="submitForm()">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="form-floating mb-3">
+                  <input type="username" class="form-control" id="floatingInput" placeholder="Username"
+                    formControlName="userName">
+                  <label for="floatingInput">Username</label>
+                </div>
+                <div class="form-floating mb-3">
+                  <input type="firstName" class="form-control" id="floatingInput" placeholder="First Name"
+                    formControlName="firstName">
+                  <label for="floatingInput">First Name</label>
+                </div>
+                <div class="form-floating mb-3">
+                  <input type="lastName" class="form-control" id="floatingInput" placeholder="Last Name"
+                    formControlName="lastName">
+                  <label for="floatingInput">Last Name</label>
+                </div>
+                <div class="form-floating mb-3">
+                  <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com"
+                    formControlName="email">
+                  <label for="floatingInput">Email</label>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-floating mb-3">
+                  <input type="basicSalary" class="form-control" id="floatingInput" placeholder="Basic Salary"
+                    formControlName="basicSalary">
+                  <label for="floatingInput">Basic Salary</label>
+                </div>
+                <div class="form-floating mb-3">
+                  <input type="status" class="form-control" id="floatingInput" placeholder="Status"
+                    formControlName="status">
+                  <label for="floatingInput">Status</label>
+                </div>
+                <div class="form-floating mb-3">
+                  <input type="group" class="form-control" id="floatingInput" placeholder="Group"
+                    formControlName="group">
+                  <label for="floatingInput">Group</label>
+                </div>
+                <div class="input-group">
+                  <input class="form-control" placeholder="yyyy-mm-dd" name="birthDate" [(ngModel)]="model" ngbDatepicker
+                    #d="ngbDatepicker" formControlName="birthDate" />
+                  <button class="btn btn-outline-secondary bi bi-calendar3" (click)="d.toggle()" type="button"></button>
+                </div>
+              </div>
+              <div class="col-md-12">
+                <div class="form-floating mb-3">
+                  <input type="description" class="form-control" id="floatingInput" placeholder="Description"
+                    formControlName="description">
+                  <label for="floatingInput">Description</label>
+                </div>
+              </div>
+            </div>
+            <div class="form-button">
+              <button class="btn btn-primary" type="submit">Button</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

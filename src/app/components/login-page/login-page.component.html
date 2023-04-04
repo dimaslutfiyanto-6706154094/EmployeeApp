@@ -1,0 +1,30 @@
+<div class="container">
+  <div class="card mb-3">
+    <div class="row g-0">
+      <div class="col-md-4">
+        <img src="../../../assets/images/signin-image.jpg" class="img-fluid rounded-start" alt="login-image" style="max-width: 120%;">
+      </div>
+      <div class="col-md-8">
+        <div class="card-body">
+          <h5 class="card-title">{{ title }}</h5>
+          <p class="card-text">{{ subTitle }}</p>
+          <form [formGroup]="loginForm" (ngSubmit)="login()">
+            <div class="form-floating mb-3">
+              <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com"
+                formControlName="email">
+              <label for="floatingInput">Email address</label>
+            </div>
+            <div class="form-floating">
+              <input type="password" class="form-control" id="floatingPassword" placeholder="Password"
+                formControlName="password">
+              <label for="floatingPassword">Password</label>
+            </div>
+            <div class="form-button">
+              <button class="btn btn-primary" type="submit">Button</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

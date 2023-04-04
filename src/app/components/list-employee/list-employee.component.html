@@ -1,0 +1,42 @@
+<div class="container">
+  <div class="row">
+    <button class="btn btn-primary" (click)="addPage()">
+      Add Employeee
+    </button>
+    <table class="table">
+      <thead>
+        <tr>
+          <th scope="col">No</th>
+          <th scope="col">Username</th>
+          <th scope="col">First Name</th>
+          <th scope="col">Last Name</th>
+          <th scope="col">Email</th>
+          <th scope="col">Birth Date</th>
+          <th scope="col">Basic Salary</th>
+          <th scope="col">Status</th>
+          <th scope="col">Group</th>
+          <th scope="col">Description</th>
+
+          <th colspan="2">Action</th>
+        </tr>
+      </thead>
+      <tbody *ngFor="let item of myData">
+        <tr>
+          <th scope="row">{{ item.id }}</th>
+          <td>{{ item.userName }}</td>
+          <td>{{ item.firstName }}</td>
+          <td>{{ item.lastName }}</td>
+          <td>{{ item.email }}</td>
+          <td>{{ item.birthDate }}</td>
+          <td>{{ item.basicSalary }}</td>
+          <td>{{ item.status }}</td>
+          <td>{{ item.group }}</td>
+          <td>{{ item.description }}</td>
+
+          <button class="btn btn-warning" (click)="editPage(item.id)">Edit</button>
+          <button class="btn btn-danger" (click)="deleteItem(item.id)">Delete</button>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

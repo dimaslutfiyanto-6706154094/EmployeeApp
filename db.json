@@ -1,0 +1,92 @@
+{
+  "signupUsersList": [
+    {
+      "name": "Dimas Lutfiyanto",
+      "email": "lutfiyantom@gmail.com",
+      "password": "1234",
+      "id": 1
+    }
+  ],
+  "employees": [
+    {
+      "userName": "Agnikai1",
+      "firstName": "Dimas",
+      "lastName": "Lutfiyanto",
+      "email": "lutfiyantom@gmail.com",
+      "birthDate": {
+        "year": 2023,
+        "month": 4,
+        "day": 2
+      },
+      "basicSalary": "10000000",
+      "status": "Tetap",
+      "group": "DDL",
+      "description": "TESTING",
+      "id": 1
+    },
+    {
+      "userName": "Agnikai2",
+      "firstName": "Dimas",
+      "lastName": "Lutfiyanto",
+      "email": "lutfiyantom@gmail.com",
+      "birthDate": {
+        "year": 2023,
+        "month": 4,
+        "day": 2
+      },
+      "basicSalary": "10000000",
+      "status": "Tetap",
+      "group": "DDL",
+      "description": "TESTING",
+      "id": 4
+    },
+    {
+      "userName": "Agnikai5",
+      "firstName": "Dimas",
+      "lastName": "Lutfiyanto",
+      "email": "lutfiyantom@gmail.com",
+      "birthDate": {
+        "year": 2023,
+        "month": 4,
+        "day": 2
+      },
+      "basicSalary": "10000000",
+      "status": "Tetap",
+      "group": "DDL",
+      "description": "TESTING",
+      "id": 5
+    },
+    {
+      "userName": "AgniSam1",
+      "firstName": "Samid",
+      "lastName": "Dimas",
+      "email": "lutfiyantod@gmail.com",
+      "birthDate": {
+        "year": 2023,
+        "month": 4,
+        "day": 9
+      },
+      "basicSalary": "10291329013",
+      "status": "Kontrak",
+      "group": "APD",
+      "description": "TESTING 2",
+      "id": 6
+    },
+    {
+      "userName": "AgniSam2",
+      "firstName": "Samid",
+      "lastName": "Dimas",
+      "email": "lutfiyantod@gmail.com",
+      "birthDate": {
+        "year": 2023,
+        "month": 4,
+        "day": 11
+      },
+      "basicSalary": "421084894201",
+      "status": "Kontrak",
+      "group": "ASP",
+      "description": "TESTING 3",
+      "id": 7
+    }
+  ]
+}
